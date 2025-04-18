@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 플렉스 5 </title>
+    <style>
+        
+        .blue {
+            background-color: lightskyblue;
+        }
+        .pink {
+            background-color: lightpink; padding: 10px;
+        }
+        .border {
+            border: 1px solid black; padding: 14px;
+        }
+
+        .flex-contatinar {
+            display: flex;
+            flex-direction: row;
+            flex-wrap:wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            align-content: stretch;
+        }
+        .flex-contatinar div{
+            width: 60px;
+        }
+
+        .start {
+            align-self: flex-start;
+        }
+        .stretch {
+            align-self: stretch;
+        }
+
+    </style>
+</head>
+<body class=".flex-contatinar" >
+    <div class="border">
+    <div class="flex-contatinar">
+    <div class="blue">Item 1</div>
+    <div class="pink">Item 2</div>
+    <div class="blue">Item 3</div>
+    <div class="pink stretch">Item 4</div>
+    <div class="blue start">Item 5</div>
+    <div class="pink">Item 6</div> 
+    </div></div>
+</body>
+</html>

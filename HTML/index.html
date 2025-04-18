@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>노벨버스 앱</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="screen screen1">
+    <h1>🚌 노벨버스</h1>
+    <div class="card">
+      <div class="station">명동입구</div>
+      <div class="bus">
+        <div>
+          <strong>470</strong><br/><span>답십리역</span>
+        </div>
+        <div class="time green">3분 👥</div>
+      </div>
+      <div class="bus">
+        <div>
+          <strong>1005-1</strong><br/><span>남산호타널</span>
+        </div>
+        <div class="time yellow">6분 👥</div>
+      </div>
+      <div class="bus">
+        <div>
+          <strong>463</strong><br/><span>상아탑</span>
+        </div>
+        <div class="time red">10분 👥</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="screen screen2">
+    <h2>정류장 설정</h2>
+    <input type="text" placeholder="정류장 검색" />
+    <ul class="stop-list">
+      <li>명동입구 <span class="code">01-001</span> <button>즐겨찾기</button></li>
+      <li>뉴국제호텔 <span class="code">01-480</span> <button>즐겨찾기</button></li>
+      <li>남산호타널 <span class="code">01-002</span> <button>즐겨찾기</button></li>
+    </ul>
+  </div>
+
+  <div class="screen screen3">
+    <img src="bus_map_ui.png" alt="버스 노선 지도" class="map-img" />
+    <div class="route-info">
+      <h3>🚏 470번 버스 경로</h3>
+      <ul>
+        <li>노들서원</li>
+        <li>용산역</li>
+        <li>숭례문</li>
+        <li>서림대역</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
